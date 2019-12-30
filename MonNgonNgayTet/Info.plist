@@ -62,6 +62,7 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
+		<string>NotoSerif-BoldItalic.ttf</string>
 		<string>DancingScript-SemiBold.ttf</string>
 	</array>
 </dict>

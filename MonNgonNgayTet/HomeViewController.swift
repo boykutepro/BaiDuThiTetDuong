@@ -14,8 +14,8 @@ class HomeViewController: UIViewController {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.contentMode = .scaleAspectFill
-        image.image = UIImage(named: "background2")
-        image.alpha = 0.9
+        image.image = UIImage(named: "background4")
+        image.backgroundColor = #colorLiteral(red: 0.4508594513, green: 0.8633706358, blue: 0.8706889573, alpha: 1)
         
         return image
     }()
@@ -23,10 +23,10 @@ class HomeViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.textColor = .black
-        label.font = UIFont(name: "DancingScript-SemiBold", size: 32)
+        label.textColor = #colorLiteral(red: 1, green: 0.2588677553, blue: 0.00192462087, alpha: 1)
+        label.font = UIFont(name: "NotoSerif-BoldItalic", size: 34)
         label.text = "MÓN NGON MỖI NGÀY"
-        label.backgroundColor = UIColor(red: 0.6, green: 0.2, blue: 0.2, alpha: 0.6)
+        label.backgroundColor = .clear
         
         return label
     } ()
@@ -37,7 +37,7 @@ class HomeViewController: UIViewController {
         label.text = "Chọn món ăn bạn muốn làm"
         label.textAlignment = .left
         label.font = UIFont(name: "DancingScript-SemiBold", size: 26)
-        label.textColor = #colorLiteral(red: 1, green: 0.8803705124, blue: 0.7910056942, alpha: 1)
+        label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
         return label
         
@@ -101,7 +101,7 @@ class HomeViewController: UIViewController {
         background.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
         background.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
         //Title
-        topLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 30).isActive = true
+        topLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
         topLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
         topLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
         topLabel.heightAnchor.constraint(equalToConstant: 60).isActive = true

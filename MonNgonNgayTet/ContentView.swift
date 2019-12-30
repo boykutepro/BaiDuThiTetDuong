@@ -12,11 +12,12 @@ class ContentView: UIView {
     
     let contentView: UIView = {
         let view = UIView()
-        view.backgroundColor = #colorLiteral(red: 1, green: 0.5327918022, blue: 0.4031986287, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.7629355336, green: 0.7798332254, blue: 0.7266999872, alpha: 1)
         view.layer.cornerRadius = 15
-        view.layer.shadowColor = #colorLiteral(red: 1, green: 0.3799027104, blue: 0.3558155566, alpha: 1)
+        view.layer.shadowColor = #colorLiteral(red: 1, green: 0.9028861582, blue: 0.604065709, alpha: 1)
         view.layer.shadowOffset = .zero
         view.layer.shadowOpacity = 1
+        
         return view
     } ()
     

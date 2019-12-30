@@ -20,6 +20,7 @@
 		9FB34B8823B76FE600A9F552 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB34B8723B76FE600A9F552 /* LoadingView.swift */; };
 		9FB34B8A23B7B23100A9F552 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB34B8923B7B23100A9F552 /* CircleView.swift */; };
 		9FB34B8C23B84C5800A9F552 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB34B8B23B84C5800A9F552 /* ContentView.swift */; };
+		9FB34B9123BA011300A9F552 /* NotoSerif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FB34B9023BA011300A9F552 /* NotoSerif-BoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9FB34B8723B76FE600A9F552 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		9FB34B8923B7B23100A9F552 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		9FB34B8B23B84C5800A9F552 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9FB34B9023BA011300A9F552 /* NotoSerif-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSerif-BoldItalic.ttf"; path = "../../../../Downloads/Noto_Serif/NotoSerif-BoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				9FB34B8523B7689E00A9F552 /* DancingScript-SemiBold.ttf */,
+				9FB34B9023BA011300A9F552 /* NotoSerif-BoldItalic.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FB34B7723B7617E00A9F552 /* LaunchScreen.storyboard in Resources */,
+				9FB34B9123BA011300A9F552 /* NotoSerif-BoldItalic.ttf in Resources */,
 				9FB34B7423B7617E00A9F552 /* Assets.xcassets in Resources */,
 				9FB34B7223B7617C00A9F552 /* Main.storyboard in Resources */,
 				9FB34B8623B7689E00A9F552 /* DancingScript-SemiBold.ttf in Resources */,

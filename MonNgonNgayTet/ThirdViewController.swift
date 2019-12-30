@@ -84,7 +84,7 @@ class ThirdViewController: UIViewController {
     } ()
     let background: UIView = {
         let view = UIView()
-        view.backgroundColor = .blue
+        view.backgroundColor = #colorLiteral(red: 1, green: 0.9127309715, blue: 0.853817004, alpha: 1)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.cornerRadius = 10
         
@@ -98,6 +98,13 @@ class ThirdViewController: UIViewController {
         
         return nhap
     } ()
+    let icon: UIButton = {
+        let icon = UIButton()
+        icon.setImage(UIImage(named: "back"), for: .normal)
+        icon.translatesAutoresizingMaskIntoConstraints = false
+        
+        return icon
+    } ()
     override func viewDidLoad() {
         super.viewDidLoad()
             
@@ -110,10 +117,15 @@ class ThirdViewController: UIViewController {
         contentView.addSubview(nguyenlieu)
         contentView.addSubview(image2)
         contentView.addSubview(nhap)
+        view.addSubview(icon)
         
         setup()
+        icon.addTarget(self, action: #selector(back), for: .touchUpInside)
     }
     
+    @objc func back () {
+        presentingViewController?.dismiss(animated: true, completion: nil)
+    }
     func setup() {
         //MARK: Image
         imageTop.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
@@ -166,7 +178,11 @@ class ThirdViewController: UIViewController {
         nhap.widthAnchor.constraint(equalToConstant: 100).isActive = true
         nhap.centerXAnchor.constraint(equalTo: contentView.centerXAnchor, constant: 0).isActive = true
         nhap.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10).isActive = true
-        
+        //
+        icon.topAnchor.constraint(equalTo: view.topAnchor, constant: 35).isActive = true
+        icon.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 5).isActive = true
+        icon.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        icon.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
     }
 
